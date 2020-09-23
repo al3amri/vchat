@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 90vh;
+}
+
+.container{
+    max-width: 995px;
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: None;
+    margin: auto;
+    height: 55vh;
+    padding: 33px;
+    overflow-y: auto;
+    margin-bottom: 5px;
+    background-color: #E6E6FA;
+    box-shadow: 0 0 10px black;
+}
+
+.container:hover, .online-members:hover{
+    box-shadow: 0 0 25px black;
+}
+
+.message{
+    width: 24%;
+    padding: 10px;
+    margin: 24px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.left{
+    background-color: rgb(240,240,237);
+    float: left;
+    clear: both;    
+}
+.right{
+    background-color: lightgreen;
+    float: right;
+    clear: both;
+}
+.audioMessage {
+    cursor: pointer;
+}
+
+.audioMessage:hover {
+    color: white;
+    background-color: darkorange;
+}
+
+#sendAudioCheckbox {
+    height: 50px;
+    width: 40%;
+}
+
+.checkboxArea {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.checkboxArea label {
+    width: 55%;
+    font-size: 20px;
+}
+
+.send {
+    width: 75%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-inline {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.form-inline input {
+  vertical-align: middle;
+  padding: 10px;
+  width: 80%;
+  margin: 10px auto;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+.form-inline input:focus {
+  border-color: lightblue;
+  border-radius: 6px;
+}
+
+.form-inline button {
+  padding: 10px 20px;
+  margin: 5px 10px 5px 0;
+  background-color: dodgerblue;
+  border: 1px solid #ddd;
+  color: white;
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+}
+
+.form-inline button:hover {
+  background-color: royalblue;
+}
+
+@media (max-width: 800px) {
+  .form-inline input {
+    margin: 5px auto;
+  }
+
+  .form-inline {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.online-members {
+    background-color: #fdfcfa;
+    text-align: center;
+    width: 80%;
+    margin: 100px auto;
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 24px;
+    box-shadow: 0 0 10px black;
+}
+
+.online-members:hover {
+    background-color: #F5F5F5;
+}
+
+.online-head {
+    margin-bottom: 25px;
+}
+
+.online-list {
+    margin: 15px;
+}

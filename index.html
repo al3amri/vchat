@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>vChat</title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/settings.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <script defer type="text/javascript" src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="js/client.js"></script>
+    <script defer src="js/settings.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="margin-bottom: 30px;">
+        <img src="res/logo.jpg" style="width: 50px; height: 50px; border-radius: 50px; margin-right: 20px">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html" target="_blank">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="html/about.html" target="_blank">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="html/meetDev.html" target="_blank">Meet the Team <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <button class="nav-link" id="myBtn" style="background-color: transparent; border: none;">Settings <span class="sr-only">(current)</span></button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <span class="close" style="color: white;">&times;</span>
+            </div>
+            <div class="modal-body">
+                <label for="voiceBoxId" style="padding: 10px">Voices: </label>
+                <select name="voiceBox" id="voiceBoxId" style="padding: 10px">
+                    <!-- <option value="volvo">Volvo</option> -->
+                </select><br><br>
+                
+                <label for="nameBoxId" style="padding: 10px">Change your name: </label>
+                <input type="text" id="nameBoxId" style="padding: 10px"><br><br>
+
+                <button id="saveSettings" style="padding: 10px">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container"></div>
+
+    <div class="send">
+
+        <form action="" id="send-container" class="form-inline">
+            <div class="checkboxArea">
+                <label for="sendAudioCheckbox">Send as audio</label>
+                <input type="checkbox" id="sendAudioCheckbox" name="sendAsAudio">
+            </div>
+            <input type="text" id="messageInp" placeholder="Type a message..." name="messageInp">
+            <button class="btn" type="submit">S<i class="fas fa-paper-plane fa-lg fa-spin"></i>e<i class="fas fa-paper-plane fa-lg fa-spin"></i>n<i class="fas fa-paper-plane fa-lg fa-spin"></i>d</button>
+        </form>
+
+    </div>
+
+    <div class="online-members">
+        <h1 class="online-head">Online Members</h1>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+
+</html>

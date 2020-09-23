@@ -1,0 +1,51 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.head {
+	text-align: center;
+	padding: 15px;
+	font-family: 'Dancing Script', cursive;
+	font-size: 7vh;
+	width: 90%;
+	border-radius: 15px;
+	margin: 50px auto;
+	background-color: lightblue;
+	box-shadow: 0 0 30px silver;
+}
+
+.name {
+	width: 225px;
+	height: 224px;
+	background-color: black;
+	border: 2px solid white;
+	color: white;
+	border-radius: 59px;
+	font-size: 30px;
+	padding: 10px;
+	font-family: cursive;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-child {
+	padding: 20px;
+	border-radius: 30px;
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 0 30px black;
+}
+
+.flex-child:first-child {
+    margin-right: 20px;
+}
+
+.flex-child p {
+	margin: 15px;
+	color: black;
+	font-size: 25px;
+}
